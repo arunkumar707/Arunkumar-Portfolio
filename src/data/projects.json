@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "title": "AI-Driven Smart Healthcare System",
+    "description": "A comprehensive healthcare platform featuring AI-powered symptom analysis, intelligent doctor scheduling, role-based dashboards for patients and doctors, and secure authentication. Built with modern MERN stack architecture.",
+    "techStack": [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "AI/ML",
+      "JWT"
+    ],
+    "githubUrl": "https://github.com/arunkumar707/healthcare-system",
+    "liveUrl": "https://healthcare-demo.com",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Online Vehicle Rental System",
+    "description": "Full-featured vehicle rental platform with advanced booking system, integrated payment gateway, real-time availability tracking, and comprehensive admin dashboard for fleet management.",
+    "techStack": [
+      "React.js",
+      "Node.js",
+      "MySQL",
+      "Stripe",
+      "Express.js"
+    ],
+    "githubUrl": "https://github.com/arunkumar707/vehicle-rental",
+    "liveUrl": "https://vehicle-rental-demo.com",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Pharmacy Management System",
+    "description": "designed to manage day-to-day pharmacy operations efficiently. The system handles inventory management, billing, prescription tracking, and sales reporting to reduce manual errors and improve operational accuracy.",
+    "techStack": [
+      "Java",
+      "Java Swing",
+      "MySQL",
+      "JDBC"
+    ],
+    "githubUrl": "https://github.com/arunkumar707/pharmacy-management",
+    "liveUrl": null,
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "React School Dashboard",
+    "description": "The dashboard is developed using React.js with a strong emphasis on reusable components, responsive layouts, and user-friendly UI design. It includes structured pages, dynamic data rendering, and interactive UI elements that simulate real-world school management workflows. The application follows best practices in frontend development, making it easy to maintain and extend.",
+    "techStack": [
+      "React.js",
+      "JavaScript (ES6+)",
+      "Tailwind CSS"
+    ],
+    "githubUrl": "https://github.com/arunkumar707/react-school-dashboard",
+    "liveUrl": null,
+    "featured": false
+  }
+]

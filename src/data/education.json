@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "degree": "Master of Computer Applications (MCA)",
+        "institution": "Maharaja Institute of Technology",
+        "location": "Mysore",
+        "year": "2024 - 2025",
+        "cgpa": "8.5",
+        "description": "Specialized in advanced software development, web technologies, and database management systems."
+    },
+    {
+        "id": 2,
+        "degree": "Bachelor of Computer Applications (BCA)",
+        "institution": "St. Joseph's First Grade College",
+        "location": "Mysore",
+        "year": "2021 - 2023",
+        "cgpa": "8.4",
+        "description": "Focused on programming fundamentals, data structures, and web development."
+    }
+]
