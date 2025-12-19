@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Full Stack Developer Intern",
+        "company": "Inventech Info Solutions Pvt. Ltd.",
+        "location": "Bangalore",
+        "startDate": "Dec 2025",
+        "endDate": "Present",
+        "current": true,
+        "description": [
+            "Working on real-time web applications using React.js and Node.js",
+            "Developing reusable React components following best practices",
+            "Building RESTful APIs with proper authentication and authorization",
+            "Managing MySQL databases and optimizing queries for performance",
+            "Collaborating with UI/UX team to implement responsive designs",
+            "Participating in code reviews and following agile methodologies"
+        ],
+        "offerLetterUrl": "/letter1.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Full Stack Developer (Academic Intern)",
+        "company": "Pepino Technology (OPC) Pvt. Ltd.",
+        "location": "Bangalore",
+        "startDate": "Jun 2025",
+        "endDate": "Aug 2025",
+        "current": false,
+        "description": [
+            "Built full-stack applications using MERN stack",
+            "Implemented CRUD operations with MongoDB and Express.js",
+            "Developed responsive user interfaces with React.js and CSS",
+            "Collaborated in a team environment using Git and GitHub",
+            "Followed proper project workflows and version control practices",
+            "Participated in daily standups and sprint planning meetings"
+        ],
+        "offerLetterUrl": "/pepino.jpeg"
+    }
+]
