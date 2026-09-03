@@ -1,60 +1,88 @@
 [
   {
     "id": 1,
-    "title": "AI-Driven Smart Healthcare System",
-    "description": "A comprehensive healthcare platform featuring AI-powered symptom analysis, intelligent doctor scheduling, role-based dashboards for patients and doctors, and secure authentication. Built with modern MERN stack architecture.",
-    "techStack": [
-      "MongoDB",
-      "Express.js",
-      "React.js",
-      "Node.js",
-      "AI/ML",
-      "JWT"
-    ],
-    "githubUrl": "https://github.com/arunkumar707/healthcare-system",
-    "liveUrl": "https://healthcare-demo.com",
-    "featured": true
+    "title": "IEBA — Industrial Engineering Platform",
+    "description": "Workforce and cost-analytics platform used by industrial engineering teams for payroll, time study, FTE allocation, and leave workflows.",
+    "techStack": ["React 19", "Vite", "Tailwind CSS", "TanStack Query", "NestJS", "MySQL", "Redis", "MinIO"],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": true,
+    "type": "intern",
+    "bullets": [
+      "Shipped feature modules for payroll, personal time study, cost-pool, department, and FTE allocation.",
+      "Built role-based leave approval, program, reports, and notification flows on NestJS + MySQL.",
+      "Integrated MinIO object storage and Redis caching for document-heavy industrial workflows."
+    ]
   },
   {
     "id": 2,
-    "title": "Online Vehicle Rental System",
-    "description": "Full-featured vehicle rental platform with advanced booking system, integrated payment gateway, real-time availability tracking, and comprehensive admin dashboard for fleet management.",
-    "techStack": [
-      "React.js",
-      "Node.js",
-      "MySQL",
-      "Stripe",
-      "Express.js"
-    ],
-    "githubUrl": "https://github.com/arunkumar707/vehicle-rental",
-    "liveUrl": "https://vehicle-rental-demo.com",
-    "featured": true
+    "title": "CSA — Certificate & Allotment Portal",
+    "description": "Government-facing allotment portal with Indian i18n, SMS OTP, and digital-certificate generation for civic applicants.",
+    "techStack": ["React 19", "Vite", "Ant Design", "TanStack Query", "i18next", "NestJS", "MySQL", "SMS"],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": true,
+    "type": "intern",
+    "bullets": [
+      "Implemented admin, CA-sites, auth, roles, and allotment modules used by real applicants.",
+      "Added react-i18next locale packs and SMS-backed OTP for multilingual government users.",
+      "Wired digital-certificate generation and Axios caching on the NestJS API."
+    ]
   },
   {
     "id": 3,
-    "title": "Pharmacy Management System",
-    "description": "designed to manage day-to-day pharmacy operations efficiently. The system handles inventory management, billing, prescription tracking, and sales reporting to reduce manual errors and improve operational accuracy.",
-    "techStack": [
-      "Java",
-      "Java Swing",
-      "MySQL",
-      "JDBC"
-    ],
-    "githubUrl": "https://github.com/arunkumar707/pharmacy-management",
+    "title": "Layout Master — GIS Auction Platform",
+    "description": "Geographic layout and auction-eligibility system with Leaflet maps, site master data, and object storage.",
+    "techStack": ["React 19", "Vite", "Tailwind CSS", "TanStack Query", "Leaflet", "NestJS"],
+    "githubUrl": null,
     "liveUrl": null,
-    "featured": false
+    "featured": false,
+    "type": "intern",
+    "bullets": [
+      "Built layout, sites, auction-eligibility, and master-geographic modules.",
+      "Mapped parcels on Leaflet 1.9 and enforced role-based access to auction data."
+    ]
   },
   {
     "id": 4,
-    "title": "React School Dashboard",
-    "description": "The dashboard is developed using React.js with a strong emphasis on reusable components, responsive layouts, and user-friendly UI design. It includes structured pages, dynamic data rendering, and interactive UI elements that simulate real-world school management workflows. The application follows best practices in frontend development, making it easy to maintain and extend.",
-    "techStack": [
-      "React.js",
-      "JavaScript (ES6+)",
-      "Tailwind CSS"
-    ],
-    "githubUrl": "https://github.com/arunkumar707/react-school-dashboard",
+    "title": "Keonics — Procurement & Facilities",
+    "description": "Enterprise operations suite covering approval flow, procurement, HR, and facilities with maps and calendar.",
+    "techStack": ["React", "Vite", "Ant Design", "Redux", "Google Maps", "NestJS", "MySQL", "Redis"],
+    "githubUrl": null,
     "liveUrl": null,
-    "featured": false
+    "featured": false,
+    "type": "intern",
+    "bullets": [
+      "Worked on approval-flow, procurement, HR, and facilities modules.",
+      "Integrated Google Maps, react-big-calendar, and a rich-text editor on the Crema template."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Timesheet — Employee Time Tracking",
+    "description": "Timesheet product with employee, manager, and admin dashboards, JWT cookie refresh, and mail alerts.",
+    "techStack": ["React 18", "Vite", "Ant Design", "Redux Toolkit", "ApexCharts", "NestJS", "MySQL", "JWT"],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": false,
+    "type": "intern",
+    "bullets": [
+      "Built EmployeeDashboard, ManagerMapping, AdminDashboard, and EmpTimesheet views.",
+      "Used redux-persist plus JWT cookie refresh and mailer on the NestJS backend."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "CDRMS — Camera & Device Mobile App",
+    "description": "Expo React Native field app for camera, device, media, and project capture against a NestJS 11 API.",
+    "techStack": ["Expo", "React Native", "NestJS 11", "MySQL", "Throttler", "Cache"],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": false,
+    "type": "intern",
+    "bullets": [
+      "Contributed to camera, device, media, project, and screen modules on mobile.",
+      "Connected notifications and navigation to a throttled, cached NestJS API."
+    ]
   }
 ]
