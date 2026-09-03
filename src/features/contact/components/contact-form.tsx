@@ -43,7 +43,7 @@ export function ContactForm({ onSubmit, isSubmitting }: ContactFormProps) {
             className="contact-field" {...register('message')} />
           <FormError message={errors.message?.message} />
         </div>
-        <Button type="submit" variant="gold" size="lg" isLoading={isSubmitting} className="self-start gap-2">
+        <Button type="submit" variant="gold" size="lg" isLoading={isSubmitting} className="w-full gap-2 justify-center">
           <Send size={13} strokeWidth={2} /> Send Message
         </Button>
       </form>

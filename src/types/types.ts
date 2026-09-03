@@ -1,4 +1,4 @@
-﻿import type {
+import type {
   ButtonHTMLAttributes,
   CSSProperties,
   HTMLAttributes,
@@ -15,7 +15,8 @@ export interface Project {
   liveUrl: string | null
   featured: boolean
   type: 'intern' | 'personal'
-  status?: 'in-development'
+  status?: 'in-development' | 'deployed' | 'completed'
+  badge?: string
   bullets?: string[]
 }
 

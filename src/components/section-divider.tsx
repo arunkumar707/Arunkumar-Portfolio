@@ -1,4 +1,4 @@
-﻿import type { SectionDividerProps } from '@/types/types'
+import type { SectionDividerProps } from '@/types/types'
 import { divider, lotusLarge } from '@/assets/images'
 
 export function SectionDivider({ label, inverted = false }: SectionDividerProps) {
