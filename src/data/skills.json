@@ -1,110 +1,25 @@
 [
-    {
-        "id": 1,
-        "category": "Frontend",
-        "name": "HTML5",
-        "level": 90
-    },
-    {
-        "id": 2,
-        "category": "Frontend",
-        "name": "CSS3",
-        "level": 90
-    },
-    {
-        "id": 3,
-        "category": "Frontend",
-        "name": "JavaScript",
-        "level": 85
-    },
-    {
-        "id": 4,
-        "category": "Frontend",
-        "name": "React.js",
-        "level": 85
-    },
-    {
-        "id": 5,
-        "category": "Frontend",
-        "name": "TypeScript",
-        "level": 80
-    },
-    {
-        "id": 6,
-        "category": "Frontend",
-        "name": "Tailwind CSS",
-        "level": 85
-    },
-    {
-        "id": 7,
-        "category": "Frontend",
-        "name": "Bootstrap",
-        "level": 80
-    },
-    {
-        "id": 8,
-        "category": "Backend",
-        "name": "Node.js",
-        "level": 85
-    },
-    {
-        "id": 9,
-        "category": "Backend",
-        "name": "NestJS",
-        "level": 80
-    },
-    {
-        "id": 11,
-        "category": "Database",
-        "name": "MySQL",
-        "level": 85
-    },
-    {
-        "id": 13,
-        "category": "Development Tools",
-        "name": "Git",
-        "level": 85
-    },
-    {
-        "id": 14,
-        "category": "Development Tools",
-        "name": "GitHub",
-        "level": 85
-    },
-    {
-        "id": 15,
-        "category": "Development Tools",
-        "name": "VS Code",
-        "level": 90
-    },
-    {
-        "id": 16,
-        "category": "Development Tools",
-        "name": "XAMPP",
-        "level": 75
-    },
-    {
-        "id": 17,
-        "category": "AI Tools",
-        "name": "ChatGPT",
-        "level": 90
-    },
-    {
-        "id": 18,
-        "category": "AI Tools",
-        "name": "Cursor",
-        "level": 85
-    },
-    {
-        "id": 19,
-        "category": "AI Tools",
-        "name": "Antigravity",
-        "level": 95
-    },
-    {
-        "id": 20,
-        "category": "AI Tools",
-        "name": "GitHub Copilot",
-        "level": 85
-    }
+  { "id": 1,  "category": "Frontend",          "name": "HTML5",             "level": 90 },
+  { "id": 2,  "category": "Frontend",          "name": "CSS3",              "level": 90 },
+  { "id": 3,  "category": "Frontend",          "name": "JavaScript",        "level": 85 },
+  { "id": 4,  "category": "Frontend",          "name": "React.js",          "level": 85 },
+  { "id": 5,  "category": "Frontend",          "name": "TypeScript",        "level": 80 },
+  { "id": 6,  "category": "Frontend",          "name": "Tailwind CSS",      "level": 85 },
+  { "id": 7,  "category": "Frontend",          "name": "TanStack Query",    "level": 80 },
+  { "id": 8,  "category": "Frontend",          "name": "React Hook Form",   "level": 80 },
+  { "id": 9,  "category": "Backend",           "name": "Node.js",           "level": 85 },
+  { "id": 10, "category": "Backend",           "name": "NestJS",            "level": 80 },
+  { "id": 11, "category": "Backend",           "name": "REST APIs",         "level": 85 },
+  { "id": 12, "category": "Backend",           "name": "JWT Auth",          "level": 80 },
+  { "id": 13, "category": "Database",          "name": "MySQL",             "level": 85 },
+  { "id": 14, "category": "Database",          "name": "Redis",             "level": 75 },
+  { "id": 15, "category": "Database",          "name": "MongoDB",           "level": 75 },
+  { "id": 16, "category": "Development Tools", "name": "Git",               "level": 85 },
+  { "id": 17, "category": "Development Tools", "name": "GitHub",            "level": 85 },
+  { "id": 18, "category": "Development Tools", "name": "Vite",              "level": 85 },
+  { "id": 19, "category": "Development Tools", "name": "VS Code",           "level": 90 },
+  { "id": 20, "category": "Development Tools", "name": "Expo",              "level": 75 },
+  { "id": 21, "category": "AI Tools",          "name": "Cursor",            "level": 90 },
+  { "id": 22, "category": "AI Tools",          "name": "ChatGPT",           "level": 85 },
+  { "id": 23, "category": "AI Tools",          "name": "GitHub Copilot",    "level": 85 }
 ]

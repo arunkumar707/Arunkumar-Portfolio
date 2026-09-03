@@ -1,60 +1,226 @@
 [
   {
     "id": 1,
-    "title": "AI-Driven Smart Healthcare System",
-    "description": "A comprehensive healthcare platform featuring AI-powered symptom analysis, intelligent doctor scheduling, role-based dashboards for patients and doctors, and secure authentication. Built with modern MERN stack architecture.",
-    "techStack": [
-      "MongoDB",
-      "Express.js",
-      "React.js",
-      "Node.js",
-      "AI/ML",
-      "JWT"
-    ],
-    "githubUrl": "https://github.com/arunkumar707/healthcare-system",
-    "liveUrl": "https://healthcare-demo.com",
-    "featured": true
+    "title": "IEBA — Bits of Time (Workforce & Time Study Platform)",
+    "description": "Enterprise multi-tenant workforce analytics and time-study platform built for Bits of Time, governing industrial engineering workflows, personal & scheduled time studies, FTE allocation, activity-based cost pools, and payroll.",
+    "techStack": ["React 19", "TypeScript", "TanStack Table", "TanStack Query", "NestJS", "MySQL", "Redis", "MinIO"],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": true,
+    "type": "intern",
+    "badge": "Inventech · Production",
+    "bullets": [
+      "Developed core modules for Personal Time Study, scheduled time tracking, job classification pools, and automated FTE workload allocation.",
+      "Implemented drag-and-drop schedule workflows using @dnd-kit, TanStack Table v8, and document report generation with @react-pdf/renderer.",
+      "Engineered multi-tenant NestJS backend with role-based leave approvals, MinIO object storage, Redis caching, and MySQL persistence."
+    ]
   },
   {
     "id": 2,
-    "title": "Online Vehicle Rental System",
-    "description": "Full-featured vehicle rental platform with advanced booking system, integrated payment gateway, real-time availability tracking, and comprehensive admin dashboard for fleet management.",
-    "techStack": [
-      "React.js",
-      "Node.js",
-      "MySQL",
-      "Stripe",
-      "Express.js"
-    ],
-    "githubUrl": "https://github.com/arunkumar707/vehicle-rental",
-    "liveUrl": "https://vehicle-rental-demo.com",
-    "featured": true
+    "title": "CAS — Civic Amenity Site Allotment & Registration Portal",
+    "description": "Government allotment portal for Civic Amenity (CA) sites and institutional registrations, featuring multilingual localization (English & Kannada), SMS OTP authentication, digital certificate issuance, and S3-backed document verification.",
+    "techStack": ["React 19", "TypeScript", "TanStack Query", "NestJS", "MySQL", "Redis", "AWS S3", "i18next"],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": true,
+    "type": "intern",
+    "badge": "Karnataka Civic Portal",
+    "bullets": [
+      "Developed end-to-end civic applicant and CA-site allotment modules with multi-step registration, form validation (Zod + React Hook Form), and refund processing.",
+      "Integrated multilingual support using react-i18next alongside secure SMS-based OTP authentication for civic citizens and administrative staff.",
+      "Built automated digital certificate generation, S3 document pipelines, and high-concurrency NestJS APIs backed by MySQL and Redis caching."
+    ]
   },
   {
     "id": 3,
-    "title": "Pharmacy Management System",
-    "description": "designed to manage day-to-day pharmacy operations efficiently. The system handles inventory management, billing, prescription tracking, and sales reporting to reduce manual errors and improve operational accuracy.",
-    "techStack": [
-      "Java",
-      "Java Swing",
-      "MySQL",
-      "JDBC"
-    ],
-    "githubUrl": "https://github.com/arunkumar707/pharmacy-management",
+    "title": "Layout Master — GIS Urban Planning & Auction Platform",
+    "description": "Enterprise GIS land layout and civic site management system enabling urban planning authorities to map geographic parcels, manage site master data, govern auction eligibility, and configure role-based civic workflows.",
+    "techStack": ["React 19", "TypeScript", "TanStack Table", "TanStack Query", "Leaflet", "NestJS", "MySQL", "AWS S3"],
+    "githubUrl": null,
     "liveUrl": null,
-    "featured": false
+    "featured": false,
+    "type": "intern",
+    "badge": "GIS Urban Planning",
+    "bullets": [
+      "Architected interactive GIS parcel mapping using Leaflet 1.9 with polygon boundaries, master-geographic coordinate layers, and site master records.",
+      "Implemented feature-sliced frontend architecture (TanStack Table v8, TanStack Query v5, React Hook Form + Zod) for high-density administrative data grids.",
+      "Engineered strict multi-layered NestJS backend (Controllers, DTOs, Custom Repositories) with TypeORM query builders, S3 document storage, and role-based permissions."
+    ]
   },
   {
     "id": 4,
-    "title": "React School Dashboard",
-    "description": "The dashboard is developed using React.js with a strong emphasis on reusable components, responsive layouts, and user-friendly UI design. It includes structured pages, dynamic data rendering, and interactive UI elements that simulate real-world school management workflows. The application follows best practices in frontend development, making it easy to maintain and extend.",
-    "techStack": [
-      "React.js",
-      "JavaScript (ES6+)",
-      "Tailwind CSS"
-    ],
-    "githubUrl": "https://github.com/arunkumar707/react-school-dashboard",
+    "title": "Keonics — State Infrastructure & Procurement ERP",
+    "description": "Government ERP engineered for KEONICS (Karnataka State Electronics Development Corp) governing industrial IT parks, land plot allocations, vendor procurement, expenditure audits, and facility management.",
+    "techStack": ["React", "TypeScript", "Ant Design", "Redux Toolkit", "NestJS", "MySQL", "Google Maps", "AWS S3"],
+    "githubUrl": null,
     "liveUrl": null,
-    "featured": false
+    "featured": false,
+    "type": "intern",
+    "badge": "State Government ERP",
+    "bullets": [
+      "Engineered infrastructure mapping and plot allocation modules integrated with Google Maps for real-time land parcel visualization.",
+      "Built multi-stage procurement and vendor expenditure approval flows with digital signing, document verification, and S3 storage.",
+      "Developed tenant services, facility booking, and HR resource dashboards with Ant Design, Redux Toolkit, and NestJS APIs."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Timesheet — Enterprise Workforce & Attendance Management",
+    "description": "Multi-role enterprise timesheet and attendance platform featuring role-based dashboards (Admin, Manager, Employee), automated submission locking, hierarchy mapping, leave management, and PDF report generation.",
+    "techStack": ["React 18", "TypeScript", "Ant Design", "Redux Toolkit", "NestJS", "MySQL", "ApexCharts", "jsPDF"],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": false,
+    "type": "intern",
+    "badge": "Enterprise Platform",
+    "bullets": [
+      "Architected 3 distinct role dashboards (Admin, Manager, Employee) with timesheet logging, leave request approvals, and dynamic manager-employee hierarchy mapping.",
+      "Engineered automated timesheet locking, Bull queue background jobs for deadline reminders, and mail alert pipelines.",
+      "Implemented interactive analytics dashboards using ApexCharts & Recharts, along with automated client-side PDF timesheet export via jsPDF."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "CDRMS — Correct Dimension Report Management System",
+    "description": "Government land survey and field inspection mobile & cloud platform for Public Works Department engineers, handling on-site dimension audits, geotagged evidence, and multi-tier CAO approvals.",
+    "techStack": ["React Native", "Expo", "TypeScript", "NestJS", "MySQL", "TypeORM", "GPS & Maps"],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": false,
+    "type": "intern",
+    "badge": "PWD Land Survey",
+    "bullets": [
+      "Engineered cross-platform mobile app with GPS geotagging, on-site photo/video evidence capture, and offline draft states.",
+      "Built field survey modules for Khatedar verification, parcel dimension calculations, and road classification reports.",
+      "Integrated multi-tier approval pipelines (Field Officer, Assistant Engineer, CAO) backed by NestJS transactions & MySQL."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Voice Excel Assistant — Next.js 15 Web App",
+    "description": "Interactive voice-driven spreadsheet web application powered by Next.js 15 App Router and OpenAI Whisper, providing hands-free cell data entry with column-aware smart formatting and auto-saving.",
+    "techStack": ["Next.js 15", "React 19", "TypeScript", "OpenAI Whisper", "Tailwind CSS", "Axios"],
+    "githubUrl": "https://github.com/arunkumar707/excel-voice-client",
+    "liveUrl": null,
+    "featured": true,
+    "type": "personal",
+    "badge": "Deployed Client App",
+    "bullets": [
+      "Engineered hands-free voice transcription with OpenAI Whisper API & Web Speech API with smart column formatting for dates and names.",
+      "Implemented auto-saving grid engine with 500ms debounce sync to backend, row-level locking, and search filters.",
+      "Built responsive desktop and mobile spreadsheet interfaces with Framer Motion transitions."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Voice Excel Assistant — NestJS Backend API",
+    "description": "High-performance NestJS 10 REST API powering the Voice Excel spreadsheet engine, featuring JWT authentication, automated MySQL persistence, ExcelJS file streaming, and auto-seeding.",
+    "techStack": ["NestJS 10", "TypeScript", "MySQL", "TypeORM", "Passport JWT", "ExcelJS", "bcrypt"],
+    "githubUrl": "https://github.com/arunkumar707/excel-voice-api",
+    "liveUrl": null,
+    "featured": true,
+    "type": "personal",
+    "badge": "Deployed Server API",
+    "bullets": [
+      "Built modular REST API with versioned endpoints (/api/v1) for workbook CRUD, cell grid snapshots, and session management.",
+      "Integrated TypeORM with MySQL for automated schema synchronization and row-level data consistency.",
+      "Engineered ExcelJS streaming pipelines for real-time .xlsx workbook generation and secure file downloads."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Smart Healthcare System — AI Symptom Analysis & Scheduling",
+    "description": "Comprehensive MERN-stack telemedicine platform designed for intelligent symptom analysis, specialist doctor appointment scheduling, and role-based clinic administration.",
+    "techStack": ["MongoDB", "Express", "React", "Node.js", "AI Analysis", "Tailwind CSS", "JWT"],
+    "githubUrl": "https://github.com/arunkumar707/AI-Driven-Smart-Healthcare-System-MERN-Full-Stack",
+    "liveUrl": null,
+    "featured": true,
+    "type": "personal",
+    "badge": "MCA Final Sem Project",
+    "bullets": [
+      "Developed an AI-guided symptom checker offering preliminary medical insights and intelligent specialist doctor recommendations.",
+      "Engineered doctor appointment booking with time-slot management, booking confirmations, and patient medical record history.",
+      "Implemented secure multi-role portal (Admin, Doctor, Patient) with JWT authentication and responsive clinic dashboard."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Modern Developer Portfolio — Personal Showcase",
+    "description": "High-performance developer portfolio built with Vite, React 19, Tailwind CSS, and custom design tokens, featuring interactive offer letter document modal, contact system, and responsive animations.",
+    "techStack": ["React 19", "Vite", "Tailwind CSS", "TypeScript", "Lucide Icons"],
+    "githubUrl": "https://github.com/arunkumar707/Arunkumar-Portfolio",
+    "liveUrl": null,
+    "featured": true,
+    "type": "personal",
+    "badge": "Developer Portfolio",
+    "bullets": [
+      "Engineered custom dual-section project showcase distinguishing real-world enterprise platforms from self-built applications.",
+      "Built accessible document modal viewer with backdrop blur, scroll locking, and ESC key handling.",
+      "Crafted responsive editorial UI with dark-navy surfaces, gold accents, and fluid typography."
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Interactive School & Academy Dashboard",
+    "description": "Modern educational administrative dashboard developed during initial intern training at Inventech, featuring student enrollment management, class scheduling, and academic performance tracking.",
+    "techStack": ["React 18", "Vite", "Tailwind CSS", "Recharts", "React Big Calendar", "Zod"],
+    "githubUrl": "https://github.com/arunkumar707/Interactive-School-Dashboard-Using-React.js",
+    "liveUrl": null,
+    "featured": false,
+    "type": "personal",
+    "badge": "Inventech Training Project",
+    "bullets": [
+      "Designed responsive academic calendar and timetable scheduling interface using React Big Calendar and Lucide icons.",
+      "Built dynamic analytics dashboards with Recharts displaying attendance rates, subject distributions, and exam statistics.",
+      "Integrated robust client-side form validation with React Hook Form, Zod schemas, and custom modal dialogs."
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Online Multi-Vehicle Rental System",
+    "description": "End-to-end vehicle rental booking portal supporting cars, bikes, and commercial trucks with real-time fleet availability, rental calculator, and admin verification.",
+    "techStack": ["PHP", "MySQL", "JavaScript", "Bootstrap", "Payment Gateway", "HTML5/CSS3"],
+    "githubUrl": "https://github.com/arunkumar707/Online-Vehicle-Rental-System",
+    "liveUrl": null,
+    "featured": false,
+    "type": "personal",
+    "badge": "BCA Final Sem Project",
+    "bullets": [
+      "Built vehicle catalog filtering by vehicle class, brand, body type, and daily rental rate.",
+      "Developed complete booking reservation workflow with rental duration calculator and automated PDF voucher generation.",
+      "Implemented administrative dashboard for fleet inventory management, reservation approvals, and customer feedback moderation."
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Realtime Chat & Messaging Platform",
+    "description": "Real-time communication and bot platform built with Node.js, Express, and Socket.IO featuring live typing indicators, active participant rosters, and instant room message delivery.",
+    "techStack": ["Node.js", "Express", "Socket.IO", "JavaScript", "WebSockets", "CSS3"],
+    "githubUrl": "https://github.com/arunkumar707/Chatbot",
+    "liveUrl": null,
+    "featured": false,
+    "type": "personal",
+    "badge": "WebSocket App",
+    "bullets": [
+      "Engineered bidirectional WebSocket event architecture using Socket.IO for low-latency live messaging.",
+      "Built active participant rosters, typing indicator triggers, and room broadcasting event pipelines.",
+      "Designed lightweight, responsive web chat client running seamlessly across desktop and mobile browsers."
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Pharmacy Management System — ERP & Inventory",
+    "description": "Desktop inventory, prescription, and billing software engineered for pharmacies to manage drug stock levels, automated invoice printing, and supplier transaction histories.",
+    "techStack": ["Java", "Swing", "MySQL", "JDBC", "NetBeans", "Desktop UI"],
+    "githubUrl": "https://github.com/arunkumar707/Pharmacy-Management-System",
+    "liveUrl": null,
+    "featured": false,
+    "type": "personal",
+    "badge": "Java & Desktop ERP",
+    "bullets": [
+      "Engineered drug inventory tracking with low-stock alerts, expiry date monitoring, and batch number auditing.",
+      "Built point-of-sale billing module with automated tax calculation, invoice printing, and customer ledger management.",
+      "Designed normalized relational MySQL database with JDBC transaction safety for robust operational records."
+    ]
   }
 ]
