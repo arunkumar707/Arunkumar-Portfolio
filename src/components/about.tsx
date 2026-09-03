@@ -10,7 +10,7 @@ export default function About() {
 
           <div className="reveal flex justify-center">
             <div className="relative">
-              <div className="w-[340px] h-[340px] sm:w-[380px] sm:h-[380px] max-w-[85vw] aspect-square rounded-full p-[3px]" style={{ background: 'var(--gold-gradient)' }}>
+              <div className="w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] max-w-[85vw] aspect-square rounded-full p-[3px]" style={{ background: 'var(--gold-gradient)' }}>
                 <img
                   src={profile}
                   alt="Arun Kumar A N"
@@ -30,7 +30,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="text-justify">
+          <div className="text-left sm:text-justify">
             <span className="reveal block text-xs font-bold tracking-[0.18em] uppercase mb-3" style={{ color: 'var(--gold)' }}>
               About Me
             </span>
@@ -49,7 +49,7 @@ export default function About() {
               systems, and reliable data layers. My primary tools include React, Next.js, TypeScript, NestJS, MySQL, and Redis.
             </p>
             <p className="reveal reveal-d3 text-sm leading-[1.8] mb-6" style={{ color: 'var(--text-secondary)' }}>
-              Alongside my professional work, I{"'"}ve built and deployed 6 full-stack projects independently, giving me
+              Alongside my professional work, I{"'"}ve built and deployed 8 full-stack projects independently, giving me
               hands-on experience with the complete development lifecycle — from architecture and implementation to
               deployment and maintenance.
             </p>

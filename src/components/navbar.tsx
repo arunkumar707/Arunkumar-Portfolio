@@ -138,28 +138,40 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Navigation Dropdown */}
+      {/* Mobile Navigation Dropdown — styled to match desktop aesthetic */}
       {isMobileMenuOpen && (
-        <div className="pointer-events-auto absolute top-full mt-2 left-4 right-4 bg-slate-900/95 backdrop-blur-2xl rounded-2xl border border-slate-700/60 p-5 shadow-2xl animate-slide-down md:hidden flex flex-col gap-2">
-          {navItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
-              className={`w-full text-left px-4 py-3 rounded-xl transition-all font-medium border-none cursor-pointer ${
-                activeSection === item.id ? 'text-white bg-white/20' : 'text-slate-300 hover:text-white hover:bg-white/10'
-              }`}
+        <div className="pointer-events-auto absolute top-full mt-2.5 left-4 right-4 bg-slate-900/90 backdrop-blur-2xl rounded-2xl border border-white/20 p-4 shadow-[0_12px_40px_rgba(0,0,0,0.6)] animate-slide-down md:hidden flex flex-col gap-1.5">
+          {navItems.map((item) => {
+            const isActive = activeSection === item.id
+            return (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`w-full text-left px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border cursor-pointer ${
+                  isActive
+                    ? 'bg-white/20 text-white shadow-[0_0_15px_rgba(255,255,255,0.25)] border-white/25 font-semibold'
+                    : 'text-slate-300 hover:text-white hover:bg-white/10 border-transparent bg-transparent'
+                }`}
+              >
+                {item.label}
+              </button>
+            )
+          })}
+
+          <div className="pt-2 border-t border-white/10 mt-1">
+            <a
+              href={CONTACT_WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full px-5 py-2 flex items-center justify-between text-xs font-bold rounded-full transition-all duration-300 shadow-md hover:scale-[1.02] active:scale-95"
+              style={{ background: 'linear-gradient(90deg, #25D366 30%, #ffffff 100%)' }}
             >
-              {item.label}
-            </button>
-          ))}
-          <a
-            href={CONTACT_WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full mt-2 px-4 py-3 bg-gradient-to-r from-emerald-500 to-green-600 text-white font-semibold rounded-xl text-center shadow-lg transform active:scale-95 transition-all block"
-          >
-            Let{"'"}s Chat
-          </a>
+              <span className="text-white tracking-wide text-sm font-bold">Let{"'"}s Chat</span>
+              <div className="bg-white rounded-full p-1.5 flex items-center justify-center shadow-md">
+                <FaWhatsapp className="text-sm text-[#25D366]" />
+              </div>
+            </a>
+          </div>
         </div>
       )}
     </div>
