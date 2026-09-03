@@ -1,4 +1,4 @@
-﻿/* =====================================================
+/* =====================================================
    Portfolio â€” Global Design System
    Tokens copied from EduWeConnect. DO NOT change values.
    ===================================================== */
@@ -315,11 +315,11 @@ button:not(:disabled):not([data-dropdown-trigger]):not([data-slot="select-trigge
 }
 
 .social-ghost {
-  border-color: color-mix(in srgb, var(--cream) 18%, transparent);
-  color: color-mix(in srgb, var(--cream) 50%, transparent);
+  border-color: var(--cream);
+  color: var(--cream);
 }
 .social-ghost:hover {
-  border-color: color-mix(in srgb, var(--light-gold) 70%, transparent);
+  border-color: var(--light-gold);
   color: var(--light-gold);
 }
 .social-ghost-footer:hover {
@@ -363,3 +363,13 @@ button:not(:disabled):not([data-dropdown-trigger]):not([data-slot="select-trigge
   border-color: var(--sand);
 }
 
+
+.hero-seal-ring {
+  animation: seal-spin 18s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes seal-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}

@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { FaBars, FaTimes, FaWhatsapp } from 'react-icons/fa'
 import { CONTACT_WHATSAPP_URL } from '@/features/contact'
 
@@ -121,7 +121,7 @@ export default function Navbar() {
             className="group hidden md:flex items-center gap-2 pl-4 pr-1.5 py-1.5 text-xs font-bold rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 hover:shadow-green-500/30"
             style={{ background: 'linear-gradient(90deg, #25D366 30%, #ffffff 100%)' }}
           >
-            <span className="text-white tracking-wide">Let{"'"}s Talk</span>
+            <span className="text-white tracking-wide">Let{"'"}s Chat</span>
             <div className="bg-white rounded-full p-1 flex items-center justify-center transition-all duration-300 group-hover:-translate-y-0.5 group-hover:scale-110 group-hover:drop-shadow-xl">
               <FaWhatsapp className="text-sm text-[#25D366]" />
             </div>
@@ -158,7 +158,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="w-full mt-2 px-4 py-3 bg-gradient-to-r from-emerald-500 to-green-600 text-white font-semibold rounded-xl text-center shadow-lg transform active:scale-95 transition-all block"
           >
-            Let{"'"}s Talk
+            Let{"'"}s Chat
           </a>
         </div>
       )}
