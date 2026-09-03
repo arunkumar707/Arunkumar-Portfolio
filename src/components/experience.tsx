@@ -41,17 +41,35 @@ export default function Experience() {
           {experiences.map((exp, i) => (
             <div key={exp.id}
               className={`card-lift surface-card relative rounded-xl border p-6 sm:p-8 overflow-hidden reveal reveal-d${Math.min(i + 2, 4)}`}>
-              {exp.offerLetterUrl && (
-                <button
-                  type="button"
-                  onClick={() => setActiveLetter({ url: exp.offerLetterUrl!, title: exp.title, company: exp.company })}
-                  className="link-gold absolute top-5 right-5 sm:top-6 sm:right-6 inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-md border transition-all duration-150 bg-white/70 backdrop-blur-sm z-10 shadow-xs hover:bg-white cursor-pointer"
-                >
-                  <FileText size={12} strokeWidth={2} /> View Offer Letter
-                </button>
-              )}
+              {/* Mobile top bar: dates + offer letter button side-by-side, perfectly aligned */}
+              <div className="flex items-start justify-between gap-3 mb-4 sm:mb-0">
+                <div className="flex flex-col gap-1 sm:hidden">
+                  <div className="flex items-center gap-1.5 text-xs font-bold tracking-wide uppercase"
+                    style={{ color: 'var(--gold)' }}>
+                    <Calendar size={12} strokeWidth={2} />
+                    {exp.startDate} — {exp.endDate}
+                  </div>
+                  <div className="flex items-center gap-1.5 text-xs font-medium" style={{ color: 'var(--text-muted)' }}>
+                    <Briefcase size={12} strokeWidth={1.8} />{exp.company}
+                  </div>
+                  <div className="flex items-center gap-1.5 text-xs" style={{ color: 'var(--text-muted)' }}>
+                    <MapPin size={12} strokeWidth={1.8} />{exp.location}
+                  </div>
+                </div>
+
+                {exp.offerLetterUrl && (
+                  <button
+                    type="button"
+                    onClick={() => setActiveLetter({ url: exp.offerLetterUrl!, title: exp.title, company: exp.company })}
+                    className="link-gold sm:absolute sm:top-6 sm:right-6 inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-md border transition-all duration-150 bg-white/70 backdrop-blur-sm z-10 shadow-xs hover:bg-white cursor-pointer shrink-0"
+                  >
+                    <FileText size={12} strokeWidth={2} /> View Offer Letter
+                  </button>
+                )}
+              </div>
+
               <div className="grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-6">
-                <div className="flex flex-col gap-1.5">
+                <div className="hidden sm:flex flex-col gap-1.5">
                   <div className="flex items-center gap-1.5 text-xs font-bold tracking-wide uppercase"
                     style={{ color: 'var(--gold)' }}>
                     <Calendar size={12} strokeWidth={2} />
@@ -65,7 +83,7 @@ export default function Experience() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-serif font-bold text-lg mb-3 pr-36 sm:pr-40" style={{ color: 'var(--navy)' }}>{exp.title}</h3>
+                  <h3 className="font-serif font-bold text-lg mb-3 sm:pr-40" style={{ color: 'var(--navy)' }}>{exp.title}</h3>
                   <ul className="flex flex-col gap-2 mb-4">
                     {exp.description.map((b) => (
                       <li key={b} className="text-sm leading-[1.65] pl-4 relative" style={{ color: 'var(--text-secondary)' }}>

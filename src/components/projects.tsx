@@ -6,8 +6,8 @@ import projectsData from '@/data/projects.json'
 function ProjectCard({ project, delay }: ProjectCardProps) {
   return (
     <div className={`card-lift surface-card relative rounded-xl border p-6 overflow-hidden flex flex-col reveal reveal-d${delay}`}>
-      <div className="flex items-start justify-between gap-3 mb-3">
-        <h3 className="font-serif font-bold text-lg leading-tight" style={{ color: 'var(--navy)' }}>
+      <div className="flex flex-wrap items-start justify-between gap-2 sm:gap-3 mb-3">
+        <h3 className="font-serif font-bold text-base sm:text-lg leading-tight flex-1 min-w-[200px]" style={{ color: 'var(--navy)' }}>
           {project.title}
         </h3>
         <span className="chip-navy shrink-0 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded">

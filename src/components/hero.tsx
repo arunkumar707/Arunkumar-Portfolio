@@ -54,12 +54,12 @@ export default function Hero() {
               See My Work <ArrowRight size={14} strokeWidth={2} />
             </button>
           </div>
-          <div className="reveal reveal-d4 flex items-center pt-8 border-t border-on-navy-soft">
+          <div className="reveal reveal-d4 grid grid-cols-2 sm:flex sm:items-center gap-6 sm:gap-0 pt-8 border-t border-on-navy-soft">
             {STATS.map((s, i) => (
               <div key={s.label} className="flex items-center">
-                {i > 0 && <span className="w-px h-9 mx-8 divide-on-navy" />}
+                {i > 0 && <span className="hidden sm:block w-px h-9 mx-4 md:mx-8 divide-on-navy" />}
                 <div>
-                  <div className="font-serif font-bold" style={{ fontSize: '2rem', color: 'var(--light-gold)', lineHeight: 1 }}>{s.num}</div>
+                  <div className="font-serif font-bold text-2xl sm:text-3xl" style={{ color: 'var(--light-gold)', lineHeight: 1 }}>{s.num}</div>
                   <div className="text-xs font-medium mt-1 tracking-wide text-on-navy-muted">{s.label}</div>
                 </div>
               </div>
