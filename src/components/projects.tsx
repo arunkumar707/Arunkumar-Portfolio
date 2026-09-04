@@ -100,8 +100,8 @@ export default function Projects() {
           </h2>
           <div className="reveal reveal-d1 gold-bar mb-4" />
           <p className="reveal reveal-d2 text-sm leading-[1.8] mb-12" style={{ color: 'var(--text-secondary)', maxWidth: '640px' }}>
-            Every project below is a production platform I engineered at Inventech — built for high-concurrency enterprise,
-            Karnataka state infrastructure, and municipal government workflows.
+            Production platforms and enterprise systems engineered at Inventech — built for high concurrency,
+            secure multi-tenant workflows, and real-time operational reliability.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -124,8 +124,8 @@ export default function Projects() {
           </h2>
           <div className="reveal reveal-d1 gold-bar mb-4" />
           <p className="reveal reveal-d2 text-sm leading-[1.8] mb-12" style={{ color: 'var(--text-secondary)', maxWidth: '640px' }}>
-            Personal applications, academic capstones, and deployed server systems exploring AI integration, voice-driven spreadsheets,
-            and healthcare automation. All source code is publicly accessible on GitHub.
+            Full-stack web applications and tools built from scratch, exploring AI integration, voice-driven interfaces,
+            and real-time data automation — deployed live on Vercel and Railway with open-source code on GitHub.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

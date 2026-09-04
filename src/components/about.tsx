@@ -40,18 +40,13 @@ export default function About() {
             </h2>
             <div className="reveal reveal-d1 gold-bar mb-6" />
             <p className="reveal reveal-d2 text-sm leading-[1.8] mb-4" style={{ color: 'var(--text-secondary)' }}>
-              I{"'"}m <strong style={{ color: 'var(--navy)' }}>Arun Kumar A N</strong>, a full-stack developer at{' '}
-              <strong style={{ color: 'var(--navy)' }}>Inventech Info Solutions</strong>, where I work on real-time
-              enterprise and government applications used in real-world workflows.
+              I{"'"}m a developer who genuinely loves taking complex, messy requirements and turning them into fast, intuitive, and reliable software. My journey started with a curiosity about how the web works behind the screen, which grew into building full-stack products from the ground up.
             </p>
             <p className="reveal reveal-d3 text-sm leading-[1.8] mb-4" style={{ color: 'var(--text-secondary)' }}>
-              I work across the stack, building clean and responsive interfaces, scalable REST APIs, secure authentication
-              systems, and reliable data layers. My primary tools include React, Next.js, TypeScript, NestJS, MySQL, and Redis.
+              In my daily work, I care deeply about both sides of the application: crafting smooth, responsive user interfaces where every interaction feels snappy, and architecting clean, secure backend APIs that won{"'"}t break under load. I don{"'"}t just write code to close tickets — I focus on maintainability, performance, and real user experience.
             </p>
             <p className="reveal reveal-d3 text-sm leading-[1.8] mb-6" style={{ color: 'var(--text-secondary)' }}>
-              Alongside my professional work, I{"'"}ve built and deployed 8 full-stack projects independently, giving me
-              hands-on experience with the complete development lifecycle — from architecture and implementation to
-              deployment and maintenance.
+              When I{"'"}m not shipping features, I{"'"}m constantly experimenting with new tools, exploring modern system design, and building side projects to sharpen my skills.
             </p>
             <div className="reveal reveal-d4 flex flex-wrap gap-2">
               {TAGS.map((t) => (

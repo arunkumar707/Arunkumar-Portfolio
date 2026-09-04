@@ -13,13 +13,12 @@
   { "id": 12, "category": "Backend",           "name": "JWT Auth",          "level": 80 },
   { "id": 13, "category": "Database",          "name": "MySQL",             "level": 85 },
   { "id": 14, "category": "Database",          "name": "Redis",             "level": 75 },
-  { "id": 15, "category": "Database",          "name": "MongoDB",           "level": 75 },
   { "id": 16, "category": "Development Tools", "name": "Git",               "level": 85 },
   { "id": 17, "category": "Development Tools", "name": "GitHub",            "level": 85 },
   { "id": 18, "category": "Development Tools", "name": "Vite",              "level": 85 },
   { "id": 19, "category": "Development Tools", "name": "VS Code",           "level": 90 },
-  { "id": 20, "category": "Development Tools", "name": "Expo",              "level": 75 },
   { "id": 21, "category": "AI Tools",          "name": "Cursor",            "level": 90 },
   { "id": 22, "category": "AI Tools",          "name": "ChatGPT",           "level": 85 },
-  { "id": 23, "category": "AI Tools",          "name": "GitHub Copilot",    "level": 85 }
+  { "id": 23, "category": "AI Tools",          "name": "GitHub Copilot",    "level": 85 },
+  { "id": 24, "category": "AI Tools",          "name": "Gemini",            "level": 85 }
 ]

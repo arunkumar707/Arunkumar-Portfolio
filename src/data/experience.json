@@ -8,7 +8,7 @@
     "endDate": "Present",
     "current": true,
     "description": [
-      "Shipped 6 production apps used by government staff, field engineers, and civic applicants.",
+      "Shipped 6 production apps used by enterprise staff, field engineers, and end users.",
       "Built React feature modules with TypeScript, TanStack Query, and React Hook Form + Zod.",
       "Implemented NestJS REST APIs with JWT auth, MySQL, Redis, and MinIO object storage.",
       "Worked across web and Expo React Native — multi-tenant roles, OTP, and digital certificates.",

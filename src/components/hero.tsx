@@ -34,12 +34,13 @@ export default function Hero() {
             Building products that{' '}
             <em className="italic" style={{ color: 'var(--light-gold)' }}>actually</em> ship.
           </h1>
-          <p className="reveal reveal-d2 leading-[1.8] mb-10 text-on-navy"
+          <p className="reveal reveal-d2 leading-[1.8] mb-10 text-on-navy text-left sm:text-justify"
             style={{ fontSize: 'clamp(0.95rem,1.8vw,1.15rem)', maxWidth: '580px' }}>
-            I{"'"}m <strong className="text-on-navy-strong" style={{ fontWeight: 600 }}>Arun Kumar A N</strong> — a full-stack
-            developer at Inventech, building real-time enterprise and government
-            applications that are used in the real world. I{"'"}ve worked on 6 production projects and
-            built 6 full-stack projects from scratch, deploying and managing them on my own servers.
+            I{"'"}m <strong className="text-on-navy-strong" style={{ fontWeight: 600 }}>Arun Kumar A N</strong> — a Full-Stack
+            Developer at Inventech Info Solutions, specializing in building high-performance, real-time web applications.
+            I{"'"}ve engineered features across 6 production systems and independently architected 6+ full-stack projects from
+            scratch — delivering end-to-end solutions from responsive UIs to robust APIs and database schemas, deployed live on
+            Vercel and Railway.
           </p>
           <div className="reveal reveal-d3 flex flex-wrap items-center gap-4 mb-16">
             <a href="/resume.pdf" download="Arun_Kumar_AN_FullStack.pdf"
