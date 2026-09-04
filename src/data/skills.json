@@ -19,5 +19,6 @@
   { "id": 19, "category": "Development Tools", "name": "VS Code",           "level": 90 },
   { "id": 21, "category": "AI Tools",          "name": "Cursor",            "level": 90 },
   { "id": 22, "category": "AI Tools",          "name": "ChatGPT",           "level": 85 },
-  { "id": 23, "category": "AI Tools",          "name": "GitHub Copilot",    "level": 85 }
+  { "id": 23, "category": "AI Tools",          "name": "GitHub Copilot",    "level": 85 },
+  { "id": 24, "category": "AI Tools",          "name": "Gemini",            "level": 85 }
 ]
