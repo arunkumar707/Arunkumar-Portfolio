@@ -10,10 +10,8 @@ const SOCIALS: SocialLinkItem[] = [
 ]
 
 const STATS: StatItem[] = [
-  { num: '6',   label: 'Real-time Enterprise Apps' },
-  { num: '8',   label: 'Self-Built & Deployed' },
-  { num: '2+',  label: 'Years Experience' },
-  { num: '10+', label: 'Tech Stack Depth' },
+  { num: '6', label: 'Real-time Enterprise Apps' },
+  { num: '8', label: 'Self-Built & Deployed' },
 ]
 
 export default function Hero() {
