@@ -41,7 +41,7 @@ export default function Hero() {
             Vercel and Railway.
           </p>
           <div className="reveal reveal-d3 flex flex-wrap items-center gap-4 mb-16">
-            <a href="/resume.pdf" download="Arun_Kumar_AN_FullStack.pdf"
+            <a href="/resume.pdf" download="Arun_Kumar_AN.pdf"
               className="inline-flex items-center gap-2 font-semibold text-sm px-6 py-3"
               style={{ background: 'linear-gradient(135deg, var(--gold), var(--cream))', color: 'var(--deep-navy)', borderRadius: '6px' }}>
               <Download size={14} strokeWidth={2.5} /> Download Resume
