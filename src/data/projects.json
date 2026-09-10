@@ -11,7 +11,6 @@
     "badge": "Inventech · Production",
     "bullets": [
       "Developed core modules for Personal Time Study, scheduled time tracking, job classification pools, and automated FTE workload allocation.",
-      "Implemented drag-and-drop schedule workflows using @dnd-kit, TanStack Table v8, and document report generation with @react-pdf/renderer.",
       "Engineered multi-tenant NestJS backend with role-based leave approvals, MinIO object storage, Redis caching, and MySQL persistence."
     ]
   },
@@ -42,7 +41,6 @@
     "type": "intern",
     "badge": "GIS Urban Planning",
     "bullets": [
-      "Architected interactive GIS parcel mapping using Leaflet 1.9 with polygon boundaries, master-geographic coordinate layers, and site master records.",
       "Implemented feature-sliced frontend architecture (TanStack Table v8, TanStack Query v5, React Hook Form + Zod) for high-density administrative data grids.",
       "Engineered strict multi-layered NestJS backend (Controllers, DTOs, Custom Repositories) with TypeORM query builders, S3 document storage, and role-based permissions."
     ]
@@ -58,7 +56,6 @@
     "type": "intern",
     "badge": "State Government ERP",
     "bullets": [
-      "Engineered infrastructure mapping and plot allocation modules integrated with Google Maps for real-time land parcel visualization.",
       "Built multi-stage procurement and vendor expenditure approval flows with digital signing, document verification, and S3 storage.",
       "Developed tenant services, facility booking, and HR resource dashboards with Ant Design, Redux Toolkit, and NestJS APIs."
     ]
