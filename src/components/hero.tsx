@@ -1,3 +1,4 @@
+import resumePdf from '@/assets/Arun_Kumar_AN.pdf'
 import { Mail, Download, ArrowRight } from 'lucide-react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { lotusLarge, registerBg } from '@/assets/images'
@@ -16,6 +17,24 @@ const STATS: StatItem[] = [
 
 export default function Hero() {
   const heroBgStyle: HeroBgStyle = { '--hero-photo': `url(${registerBg})` }
+
+  const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    try {
+      const res = await fetch(resumePdf)
+      const blob = await res.blob()
+      const url = window.URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = 'Arun_Kumar_AN.pdf'
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+      window.URL.revokeObjectURL(url)
+    } catch {
+      window.open(resumePdf, '_blank')
+    }
+  }
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
@@ -37,7 +56,7 @@ export default function Hero() {
             I{"'"}m <strong className="text-on-navy-strong" style={{ fontWeight: 600 }}>Arun Kumar A N</strong> — a Full Stack Developer with hands-on experience in enterprise software development and full-stack application development using React, TypeScript, NestJS, MySQL, and REST APIs. Experienced in developing modular backend services, scalable application workflows, asynchronous processing, database-driven applications, and responsive user interfaces.
           </p>
           <div className="reveal reveal-d3 flex flex-wrap items-center gap-4 mb-16">
-            <a href="/Arun_Kumar_AN.pdf" download="Arun_Kumar_AN.pdf" target="_blank" rel="noopener noreferrer"
+            <a href={resumePdf} onClick={handleDownload} download="Arun_Kumar_AN.pdf"
               className="inline-flex items-center gap-2 font-semibold text-sm px-6 py-3"
               style={{ background: 'linear-gradient(135deg, var(--gold), var(--cream))', color: 'var(--deep-navy)', borderRadius: '6px' }}>
               <Download size={14} strokeWidth={2.5} /> Download Resume
