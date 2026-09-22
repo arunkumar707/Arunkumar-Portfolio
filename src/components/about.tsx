@@ -40,10 +40,10 @@ export default function About() {
             </h2>
             <div className="reveal reveal-d1 gold-bar mb-6" />
             <p className="reveal reveal-d2 text-sm leading-[1.8] mb-4" style={{ color: 'var(--text-secondary)' }}>
-              I{"'"}m a developer who genuinely loves taking complex, messy requirements and turning them into fast, intuitive, and reliable software. My journey started with a curiosity about how the web works behind the screen, which grew into building full-stack products from the ground up.
+              Full Stack Developer with hands-on experience in enterprise software development and full-stack application development using <strong>React, TypeScript, NestJS, MySQL, and REST APIs</strong>. Experienced in developing modular backend services, scalable application workflows, asynchronous processing, database-driven applications, and responsive user interfaces.
             </p>
             <p className="reveal reveal-d3 text-sm leading-[1.8] mb-4" style={{ color: 'var(--text-secondary)' }}>
-              In my daily work, I care deeply about both sides of the application: crafting smooth, responsive user interfaces where every interaction feels snappy, and architecting clean, secure backend APIs that won{"'"}t break under load. I don{"'"}t just write code to close tickets — I focus on maintainability, performance, and real user experience.
+              Strong understanding of software architecture, API development, debugging, system-level workflows, authentication, containerized development, and Git-based development practices. Experienced in designing loosely coupled application components with a strong focus on scalability, reliability, maintainability, and clean code.
             </p>
             <p className="reveal reveal-d3 text-sm leading-[1.8] mb-6" style={{ color: 'var(--text-secondary)' }}>
               When I{"'"}m not shipping features, I{"'"}m constantly experimenting with new tools, exploring modern system design, and building side projects to sharpen my skills.

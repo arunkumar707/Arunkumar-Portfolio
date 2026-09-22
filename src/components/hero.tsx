@@ -34,11 +34,7 @@ export default function Hero() {
           </h1>
           <p className="reveal reveal-d2 leading-[1.8] mb-10 text-on-navy text-left sm:text-justify"
             style={{ fontSize: 'clamp(0.95rem,1.8vw,1.15rem)', maxWidth: '580px' }}>
-            I{"'"}m <strong className="text-on-navy-strong" style={{ fontWeight: 600 }}>Arun Kumar A N</strong> — a Full-Stack
-            Developer at Inventech Info Solutions, specializing in building high-performance, real-time web applications.
-            I{"'"}ve engineered features across 6 production systems and independently architected 6+ full-stack projects from
-            scratch — delivering end-to-end solutions from responsive UIs to robust APIs and database schemas, deployed live on
-            Vercel and Railway.
+            I{"'"}m <strong className="text-on-navy-strong" style={{ fontWeight: 600 }}>Arun Kumar A N</strong> — a Full Stack Developer with hands-on experience in enterprise software development and full-stack application development using React, TypeScript, NestJS, MySQL, and REST APIs. Experienced in developing modular backend services, scalable application workflows, asynchronous processing, database-driven applications, and responsive user interfaces.
           </p>
           <div className="reveal reveal-d3 flex flex-wrap items-center gap-4 mb-16">
             <a href="/resume.pdf" download="Arun_Kumar_AN.pdf"
