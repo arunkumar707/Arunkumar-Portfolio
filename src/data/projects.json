@@ -141,8 +141,8 @@
   {
     "id": 9,
     "title": "Smart Healthcare System — AI Symptom Analysis & Scheduling",
-    "description": "Comprehensive MERN-stack telemedicine platform designed for intelligent symptom analysis, specialist doctor appointment scheduling, and role-based clinic administration.",
-    "techStack": ["MongoDB", "Express", "React", "Node.js", "AI Analysis", "Tailwind CSS", "JWT"],
+    "description": "Comprehensive full-stack telemedicine platform designed for intelligent symptom analysis, specialist doctor appointment scheduling, and role-based clinic administration.",
+    "techStack": ["React", "TypeScript", "NestJS", "MySQL", "TypeORM", "Tailwind CSS", "JWT"],
     "githubUrl": "https://github.com/arunkumar707/AI-Driven-Smart-Healthcare-System-MERN-Full-Stack",
     "liveUrl": null,
     "featured": true,
