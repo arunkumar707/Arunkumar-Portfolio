@@ -1,95 +1,109 @@
 [
   {
     "id": 1,
-    "title": "IEBA — Bits of Time (Workforce & Time Study Platform)",
-    "description": "Enterprise multi-tenant workforce analytics and time-study platform built for Bits of Time, governing industrial engineering workflows, personal & scheduled time studies, FTE allocation, activity-based cost pools, and payroll.",
-    "techStack": ["React 19", "TypeScript", "TanStack Table", "TanStack Query", "NestJS", "MySQL", "Redis", "MinIO"],
-    "githubUrl": null,
-    "liveUrl": null,
-    "featured": true,
-    "type": "intern",
-    "badge": "Inventech · Production",
-    "bullets": [
-      "Developed core modules for Personal Time Study, scheduled time tracking, job classification pools, and automated FTE workload allocation.",
-      "Engineered multi-tenant NestJS backend with role-based leave approvals, MinIO object storage, Redis caching, and MySQL persistence."
-    ]
-  },
-  {
-    "id": 2,
-    "title": "CAS — Civic Amenity Site Allotment & Registration Portal",
-    "description": "Government allotment portal for Civic Amenity (CA) sites and institutional registrations, featuring multilingual localization (English & Kannada), SMS OTP authentication, digital certificate issuance, and S3-backed document verification.",
-    "techStack": ["React 19", "TypeScript", "TanStack Query", "NestJS", "MySQL", "Redis", "AWS S3", "i18next"],
-    "githubUrl": null,
-    "liveUrl": null,
-    "featured": true,
-    "type": "intern",
-    "badge": "Karnataka Civic Portal",
-    "bullets": [
-      "Developed end-to-end civic applicant and CA-site allotment modules with multi-step registration, form validation (Zod + React Hook Form), and refund processing.",
-      "Integrated multilingual support using react-i18next alongside secure SMS-based OTP authentication for civic citizens and administrative staff.",
-      "Built automated digital certificate generation, S3 document pipelines, and high-concurrency NestJS APIs backed by MySQL and Redis caching."
-    ]
-  },
-  {
-    "id": 3,
     "title": "Layout Master — GIS Urban Planning & Auction Platform",
     "description": "Enterprise GIS land layout and civic site management system enabling urban planning authorities to map geographic parcels, manage site master data, govern auction eligibility, and configure role-based civic workflows.",
     "techStack": ["React 19", "TypeScript", "TanStack Table", "TanStack Query", "Leaflet", "NestJS", "MySQL", "AWS S3"],
     "githubUrl": null,
     "liveUrl": null,
-    "featured": false,
+    "featured": true,
     "type": "intern",
     "badge": "GIS Urban Planning",
     "bullets": [
-      "Implemented feature-sliced frontend architecture (TanStack Table v8, TanStack Query v5, React Hook Form + Zod) for high-density administrative data grids.",
-      "Engineered strict multi-layered NestJS backend (Controllers, DTOs, Custom Repositories) with TypeORM query builders, S3 document storage, and role-based permissions."
+      "Database & Master Entities: Designed 5 core master tables in MySQL using TypeORM (Person, Post, Role, Permission, Menu) with unique constraints and soft-delete audit fields.",
+      "Relational Mappings Architecture: Architected 4 relational mapping tables (Post-to-Person with tenure dates, Role-to-Post, Menu-to-Role, Permission-to-Role) governing structural access.",
+      "Multi-Layered NestJS Backend: Built modular RESTful APIs utilizing Controllers, DTOs with class-validator, Services for business logic, and TypeORM Custom Repositories protected by JWT guards.",
+      "Dynamic Authorization & RBAC: Implemented a runtime RBAC engine evaluating user Post and Role to dynamically resolve allowed navigation menus and granular CRUD permissions.",
+      "Reactive Frontend & State Sync: Developed high-density data grid interfaces using React 19, TypeScript, TanStack Table v8, and TanStack Query v5 with automated cache invalidation."
     ]
   },
   {
-    "id": 4,
-    "title": "Keonics — State Infrastructure & Procurement ERP",
-    "description": "Government ERP engineered for KEONICS (Karnataka State Electronics Development Corp) governing industrial IT parks, land plot allocations, vendor procurement, expenditure audits, and facility management.",
+    "id": 2,
+    "title": "KEONICS — Karnataka State Electronics Development Corporation ERP",
+    "description": "State government enterprise ERP engineered for KEONICS (Karnataka State Electronics Development Corporation) governing IT park facilities, tenant space allotments, role-based approval workflows, and expenditure audits.",
     "techStack": ["React", "TypeScript", "Ant Design", "Redux Toolkit", "NestJS", "MySQL", "Google Maps", "AWS S3"],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": true,
+    "type": "intern",
+    "badge": "State Government ERP",
+    "bullets": [
+      "Workflow JSON Schema & Process Graph: Designed structured JSON process graphs (processmaster.json) capturing taskId, process_id, task_type (STARTTASK, NORMAL, DECISION, ENDTASK), and branching decision_flows (Approve, Clarification, Reject) to govern application lifecycles.",
+      "Database Schema & Instance Tracking: Architected TypeORM entities and custom repositories (process_instance, task_instance, task_history) in MySQL to track active workflow pointers, task assignments, and lifecycle states.",
+      "Role-Based State Machine & Task Mapping: Implemented a backend state transition engine using a TaskToRole lookup dictionary to dynamically map each workflow task to authorized roles (Estate Officer, Zone Commissioner, Commissioner).",
+      "Validation & Action Payloads: Engineered RESTful action endpoints (POST /send-for-approval, PUT /close-task/:id) using NestJS DTOs and class-validator, where officers submit decisions, mandatory audit comments, and verification data.",
+      "Traceable Audit History: Logged every transition into a history table containing previous state, new state, acting actor ID (Actor A or Actor B), remarks, and timestamps for compliance auditing."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "IEBA — Bits of Time (Workforce & Time Study Platform)",
+    "description": "Enterprise multi-tenant workforce analytics and time-study platform built for Bits of Time, governing industrial engineering workflows, personal & scheduled time studies, FTE allocation, activity-based cost pools, and payroll.",
+    "techStack": ["React 19", "TypeScript", "Vite", "TanStack Query", "Tailwind CSS", "NestJS", "TypeORM", "MySQL", "JWT"],
     "githubUrl": null,
     "liveUrl": null,
     "featured": false,
     "type": "intern",
-    "badge": "State Government ERP",
+    "badge": "Inventech · Production",
     "bullets": [
-      "Built multi-stage procurement and vendor expenditure approval flows with digital signing, document verification, and S3 storage.",
-      "Developed tenant services, facility booking, and HR resource dashboards with Ant Design, Redux Toolkit, and NestJS APIs."
+      "Assigned Program & Activity Resolution Engine: Developed backend APIs to dynamically fetch and filter only the assigned programs and active industrial activities mapped to an employee's department role, ensuring accurate logging.",
+      "Personal Time Study (PTS) Logging & Validation: Engineered the core time-entry APIs (/user/timeentry/record, /submit) with strict DTO validation that records activity start/end times and total minutes while preventing overlapping time intervals.",
+      "Supervisor Review & Approval Pipeline: Built the supervisor review workflow (/timestudyrecord/:id/review) enabling managers to fetch their reportees' submitted weekly time studies, inspect activity breakdowns, and approve or reject them with feedback.",
+      "Scheduled Time Study (STS) Configuration: Architected the scheduled time study module allowing administrators to create time study schedules, assign specific eligible users, and restrict logging strictly within the scheduled time windows.",
+      "Backend Services & Frontend API Integration: Implemented modular NestJS controllers, TypeORM services, and relational MySQL schemas, seamlessly integrating with the React frontend to synchronize employee time logs and supervisor approval queues."
     ]
   },
   {
-    "id": 5,
-    "title": "Timesheet — Enterprise Workforce & Attendance Management",
-    "description": "Multi-role enterprise timesheet and attendance platform featuring role-based dashboards (Admin, Manager, Employee), automated submission locking, hierarchy mapping, leave management, and PDF report generation.",
-    "techStack": ["React 18", "TypeScript", "Ant Design", "Redux Toolkit", "NestJS", "MySQL", "ApexCharts", "jsPDF"],
+    "id": 4,
+    "title": "Worksphere — Enterprise Workforce & Attendance Management",
+    "description": "Multi-role enterprise timesheet and attendance platform featuring role-based dashboards (Admin, Manager, Employee), leave request lifecycles, automated attendance synchronization, and Redis-backed Bull queue email notification pipelines.",
+    "techStack": ["React", "TypeScript", "Ant Design", "Redux Toolkit", "NestJS", "Bull Queues", "Redis", "MySQL", "TypeORM", "Nodemailer"],
     "githubUrl": null,
     "liveUrl": null,
     "featured": false,
     "type": "intern",
     "badge": "Enterprise Platform",
     "bullets": [
-      "Architected 3 distinct role dashboards (Admin, Manager, Employee) with timesheet logging, leave request approvals, and dynamic manager-employee hierarchy mapping.",
-      "Engineered automated timesheet locking, Bull queue background jobs for deadline reminders, and mail alert pipelines.",
-      "Implemented interactive analytics dashboards using ApexCharts & Recharts, along with automated client-side PDF timesheet export via jsPDF."
+      "Leave Request Lifecycle & RESTful APIs: Designed normalized MySQL schemas (leave_requests, attendance) with TypeORM and engineered core REST APIs (POST /leave/apply, GET /leave/my-history) with DTO validation to record employee leave types, date ranges, and reason descriptions.",
+      "Manager Approval & Hierarchy Workflow: Developed manager review endpoints (GET /manager/leaves/pending, PUT /leave/:id/status) enabling team leads to fetch their direct reportees' pending leave requests and approve or reject them.",
+      "Automated Attendance State Synchronization: Built automated service logic where approving a leave request immediately updates the daily attendance records for those dates, marking status as ON_LEAVE or HALF_DAY to maintain consistent daily attendance records.",
+      "Redis-Backed Bull Queue Cron Schedulers: Configured automated NestJS cron schedulers (Friday 6:00 PM weekend reminders, month-end submission alerts, and daily attendance auditors) that push notification jobs into a Redis-backed Bull queue (mail-queue).",
+      "Asynchronous Email Reminder Pipeline (Nodemailer): Engineered a decoupled Bull queue worker processor (MailProcessor) integrating Nodemailer to dispatch personalized HTML reminder and deadline warning emails asynchronously in the background."
     ]
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "CDRMS — Correct Dimension Report Management System",
-    "description": "Government land survey and field inspection mobile & cloud platform for Public Works Department engineers, handling on-site dimension audits, geotagged evidence, and multi-tier CAO approvals.",
-    "techStack": ["React Native", "Expo", "TypeScript", "NestJS", "MySQL", "TypeORM", "GPS & Maps"],
+    "description": "Government land survey and field inspection platform for Public Works Department engineers, featuring dedicated on-premise MinIO object storage, streaming file uploads, and relational document metadata tracking.",
+    "techStack": ["NestJS", "TypeScript", "MinIO", "AWS S3 SDK", "MySQL", "TypeORM", "Multer", "REST APIs"],
     "githubUrl": null,
     "liveUrl": null,
     "featured": false,
     "type": "intern",
     "badge": "PWD Land Survey",
     "bullets": [
-      "Engineered cross-platform mobile app with GPS geotagging, on-site photo/video evidence capture, and offline draft states.",
-      "Built field survey modules for Khatedar verification, parcel dimension calculations, and road classification reports.",
-      "Integrated multi-tier approval pipelines (Field Officer, Assistant Engineer, CAO) backed by NestJS transactions & MySQL."
+      "MinIO Object Storage Integration: Configured on-premise MinIO object storage in NestJS using the AWS S3 SDK (S3ClientService) with forcePathStyle enabled to store site layouts, map sketches, and legal documents.",
+      "Multipart File Upload API: Built the file upload endpoint (POST /object-store/upload) using custom NestJS upload interceptors to handle multipart form uploads and validate file types and sizes.",
+      "Organized Folder Path Generator: Created an automated file path generator in ObjectStoreService that organizes uploads into clean folder paths (entityType/entityId/storedFileName) in MinIO.",
+      "Database File Key & Metadata Tracking: Designed the MySQL object_store table using TypeORM to store file details including the file UUID, MinIO object key, MIME type, and file size.",
+      "Secure File Streaming API by ID: Built a file viewing endpoint (GET /files/:id) that looks up the file key by its UUID, fetches the file stream from MinIO, and pipes the raw bytes straight to the frontend for image display and document download."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "CAS — Civic Amenity Site Allotment & Registration Portal",
+    "description": "Government allotment portal for Civic Amenity (CA) sites featuring a Case Worker scrutiny and verification pipeline, structured workflow process graphs, and traceable decision audit history.",
+    "techStack": ["React", "TypeScript", "Vite", "TanStack Query", "Tailwind CSS", "NestJS", "TypeORM", "MySQL", "Redis"],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": false,
+    "type": "intern",
+    "badge": "Karnataka Civic Portal",
+    "bullets": [
+      "Case Worker Scrutiny & Verification Pipeline: Engineered the CA-Site application verification module guiding citizen applications through Case Worker scrutiny, document checks, and eligibility evaluation.",
+      "Workflow JSON Process Graphs: Designed structured JSON process graphs defining workflow stages, task types, allowed decision branches (Approve, Clarification, Reject, Forward), and role transitions.",
+      "Role-Based Task Routing & Inbox Queues: Implemented action endpoints (updateVerificationDecision, bulkUpdateDecision) that evaluate the acting officer's role and zone to dynamically progress application lifecycles and route pending tasks to the next officer's inbox.",
+      "Traceable Decision History & Audit Trail: Built an append-only history tracking engine (caSite-application-history-item) that logs every administrative action with acting officer ID, previous state, new state, mandatory review remarks, and timestamps."
     ]
   },
   {
@@ -127,8 +141,8 @@
   {
     "id": 9,
     "title": "Smart Healthcare System — AI Symptom Analysis & Scheduling",
-    "description": "Comprehensive MERN-stack telemedicine platform designed for intelligent symptom analysis, specialist doctor appointment scheduling, and role-based clinic administration.",
-    "techStack": ["MongoDB", "Express", "React", "Node.js", "AI Analysis", "Tailwind CSS", "JWT"],
+    "description": "Comprehensive full-stack telemedicine platform designed for intelligent symptom analysis, specialist doctor appointment scheduling, and role-based clinic administration.",
+    "techStack": ["React", "TypeScript", "NestJS", "MySQL", "TypeORM", "Tailwind CSS", "JWT"],
     "githubUrl": "https://github.com/arunkumar707/AI-Driven-Smart-Healthcare-System-MERN-Full-Stack",
     "liveUrl": null,
     "featured": true,
