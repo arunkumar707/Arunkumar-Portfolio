@@ -204,22 +204,6 @@
   },
   {
     "id": 13,
-    "title": "Realtime Chat & Messaging Platform",
-    "description": "Real-time communication and bot platform built with Node.js, Express, and Socket.IO featuring live typing indicators, active participant rosters, and instant room message delivery.",
-    "techStack": ["Node.js", "Express", "Socket.IO", "JavaScript", "WebSockets", "CSS3"],
-    "githubUrl": "https://github.com/arunkumar707/Chatbot",
-    "liveUrl": null,
-    "featured": false,
-    "type": "personal",
-    "badge": "WebSocket App",
-    "bullets": [
-      "Engineered bidirectional WebSocket event architecture using Socket.IO for low-latency live messaging.",
-      "Built active participant rosters, typing indicator triggers, and room broadcasting event pipelines.",
-      "Designed lightweight, responsive web chat client running seamlessly across desktop and mobile browsers."
-    ]
-  },
-  {
-    "id": 14,
     "title": "Pharmacy Management System — ERP & Inventory",
     "description": "Desktop inventory, prescription, and billing software engineered for pharmacies to manage drug stock levels, automated invoice printing, and supplier transaction histories.",
     "techStack": ["Java", "Swing", "MySQL", "JDBC", "NetBeans", "Desktop UI"],
